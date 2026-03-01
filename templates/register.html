@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={stylesheet}>
+    <title> create new account </title>
+</head>
+<body>
+    <h1>here to create a new account</h1> <br>
+
+    <form method="post" action="">
+        {{form.hidden_tag() }}
+        {{ form.username }}
+        {{ form.password }}
+        {{ form.submit }}
+        <!-- so here we call username and password from RegisterForm class out off our app.py -->
+
+
+
+
+    </form>
+    <br>
+    <br>
+
+    <a href="{{url_for('login')}}">already have an account</a>
+</body>
+</html>
